@@ -1,6 +1,7 @@
 <section class="hero"><div class="wrap">
-  <div class="tagline">{{ .Get "tagline" | default site.Params.tagline }}</div>
-  <h1>{{ .Get "title" }}</h1>
-  <p class="lead">{{ .Get "lead" }}</p>
+  {{ with .Get "logo" }}<img class="hero-logo" src="{{ . }}" alt="Offband">{{ end }}
+  {{ with .Get "tagline" }}<div class="tagline">{{ . }}</div>{{ end }}
+  {{ with .Get "title" }}<h1>{{ . }}</h1>{{ end }}
+  {{ with .Get "lead" }}<p class="lead">{{ . }}</p>{{ end }}
   {{ .Inner }}
 </div></section>
