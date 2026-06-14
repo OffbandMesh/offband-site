@@ -12,4 +12,4 @@ Builds ship in three channels — **dev** (CI artifacts), **`-rc`** (community t
 
 {{< cta href1="https://github.com/OffbandMesh/meshcore-firmware/releases" label1="Releases" >}}
 
-Deep technical docs (observer CLI, SafeBoot, packet format) live at [docs.offband.org](https://docs.offband.org). Source: [meshcore-firmware](https://github.com/OffbandMesh/meshcore-firmware).
+Deep technical docs (observer CLI, SafeBoot, packet format) are in the [firmware docs](https://github.com/OffbandMesh/meshcore-firmware/tree/main/docs) — also reachable from the [docs hub](/docs). Source: [meshcore-firmware](https://github.com/OffbandMesh/meshcore-firmware).

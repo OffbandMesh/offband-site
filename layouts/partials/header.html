@@ -2,6 +2,6 @@
   <a class="brand" href="/" aria-label="Offband home"><img src="/img/logo-lockup-dark.svg" alt="Offband"></a>
   <nav class="nav">
     {{ range site.Menus.main }}<a href="{{ .PageRef | relURL }}"{{ if eq .Name "Donate" }} class="donate"{{ end }}>{{ .Name }}</a>{{ end }}
-    <a href="{{ site.Params.docsUrl }}">Docs ↗</a>
+    <a href="{{ site.Params.docsUrl }}">Docs</a>
   </nav>
 </div></header>

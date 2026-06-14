@@ -47,6 +47,9 @@ section{padding:64px 0}
 .card{background:var(--bg1);border:1px solid var(--line);border-radius:var(--r);padding:22px}
 .card h3{margin-bottom:.3em}
 .card p{font-size:15px;margin:0}
+a.cardlink{display:block;color:inherit;transition:border-color .15s,background .15s}
+a.cardlink:hover{text-decoration:none;border-color:var(--signal-dim);background:var(--bg2)}
+a.cardlink h3{color:var(--signal)}
 .tbl{width:100%;border-collapse:collapse;font-size:15px}
 .tbl th,.tbl td{text-align:left;padding:12px 14px;border-bottom:1px solid var(--line)}
 .tbl th{color:var(--ink3);font-weight:500;font-family:var(--mono);font-size:13px}

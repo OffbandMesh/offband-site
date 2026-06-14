@@ -36,7 +36,7 @@ up a server.
 | `offband.org` | this site (canonical home) |
 | `offband.app` | Flutter app static web build (separate task, app repo) |
 | `off-band.com` | 301 → `offband.org` |
-| `docs.offband.org` | firmware deep docs (existing mkdocs site, separate repo) |
+| `docs.offband.org` | **docs hub** → `offband.org/docs`; links to per-repo docs (firmware, app, GitHub) |
 
 Marketing pages live on **one** canonical domain (`offband.org`) — serving the same
 pages on multiple domains would split SEO (duplicate content).

@@ -1,1 +1,1 @@
-<div class="card"><h3>{{ .Get "title" }}</h3><p>{{ .Get "body" }}</p></div>
+{{ if .Get "href" }}<a class="card cardlink" href="{{ .Get "href" }}"><h3>{{ .Get "title" }}</h3><p>{{ .Get "body" }}</p></a>{{ else }}<div class="card"><h3>{{ .Get "title" }}</h3><p>{{ .Get "body" }}</p></div>{{ end }}
