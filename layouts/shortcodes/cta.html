@@ -1,0 +1,4 @@
+<div class="cta">
+  <a class="btn" href="{{ .Get "href1" }}">{{ .Get "label1" }}</a>
+  {{ with .Get "href2" }}<a class="btn ghost" href="{{ . }}">{{ $.Get "label2" }}</a>{{ end }}
+</div>
