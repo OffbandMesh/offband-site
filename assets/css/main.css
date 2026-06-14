@@ -24,10 +24,10 @@ code,.mono{font-family:var(--mono)}
 section{padding:64px 0}
 .site-head{position:sticky;top:0;z-index:10;background:rgba(15,20,18,.86);
   backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
-.site-head .wrap{display:flex;align-items:center;justify-content:space-between;height:64px}
+.site-head .wrap{display:flex;align-items:center;justify-content:space-between;height:72px}
 .brand{display:flex;align-items:center;gap:12px}
-.brand-mark{height:34px;display:block}
-.brand-word{font-family:var(--mono);font-weight:500;font-size:25px;letter-spacing:1px;color:var(--ink);line-height:1}
+.brand-mark{height:42px;display:block}
+.brand-word{font-family:var(--mono);font-weight:500;font-size:28px;letter-spacing:1px;color:var(--ink);line-height:1}
 .nav{display:flex;gap:22px;align-items:center}
 .nav a{color:var(--ink2);font-size:15px}
 .nav a:hover{color:var(--ink);text-decoration:none}

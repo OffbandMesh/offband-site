@@ -24,11 +24,11 @@ MORSE = {"o": "---", "f": "..-.", "b": "-...", "a": ".-", "n": "-.", "d": "-.."}
 WORD = "offband"
 
 
-def mark(transform, arc, dot):
+def mark(transform, arc, dot, sw="2.4"):
     return (
         f'<g transform="{transform}">'
-        f'<path d="M29.5 26.1 A12 12 0 1 0 39.7 35.3" fill="none" stroke="{arc}" stroke-width="2.4" stroke-linecap="round"/>'
-        f'<path d="M30.3 19.1 A19 19 0 1 0 46.5 33.7" fill="none" stroke="{arc}" stroke-width="2.4" stroke-linecap="round" opacity="0.5"/>'
+        f'<path d="M29.5 26.1 A12 12 0 1 0 39.7 35.3" fill="none" stroke="{arc}" stroke-width="{sw}" stroke-linecap="round"/>'
+        f'<path d="M30.3 19.1 A19 19 0 1 0 46.5 33.7" fill="none" stroke="{arc}" stroke-width="{sw}" stroke-linecap="round" opacity="0.5"/>'
         f'<circle cx="28" cy="38" r="3.6" fill="{dot}"/>'
         f'<circle cx="46.1" cy="17.9" r="3" fill="{dot}"/>'
         f"</g>"
@@ -83,7 +83,7 @@ def write(name, content):
 
 
 print(f"writing to {OUT}")
-write("logo-mark.svg", svg("0 0 64 64", mark("translate(3 -4)", GREEN_DIM, GREEN)))
+write("logo-mark.svg", svg("4 11 50 50", mark("translate(0 0)", GREEN_DIM, GREEN, "3")))
 write("favicon.svg", svg("0 0 64 64", f'<rect width="64" height="64" rx="14" fill="{BG}"/>' + mark("translate(2.1 -5.1) scale(1.03)", GREEN_DIM, GREEN)))
 write("logo-lockup-dark.svg", svg("0 0 500 128", lockup(INK, GREEN_DIM, GREEN), style_defs()))
 write("logo-lockup-light.svg", svg("0 0 500 128", lockup(INK_DARK, GREEN_DARK, GREEN_DARK), style_defs()))
