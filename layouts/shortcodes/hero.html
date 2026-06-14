@@ -1,0 +1,6 @@
+<section class="hero"><div class="wrap">
+  <div class="tagline">{{ .Get "tagline" | default site.Params.tagline }}</div>
+  <h1>{{ .Get "title" }}</h1>
+  <p class="lead">{{ .Get "lead" }}</p>
+  {{ .Inner }}
+</div></section>

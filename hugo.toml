@@ -1,0 +1,42 @@
+baseURL = "https://offband.org/"
+title = "Offband"
+enableRobotsTXT = false
+disableKinds = ["taxonomy", "term"]
+
+[params]
+  description = "Offband — open-source tools for LoRa mesh networking. A MeshCore client app and enhanced firmware."
+  tagline = "out-of-band mesh comms"
+  ogImage = "/img/og-banner.png"
+  githubOrg = "https://github.com/OffbandMesh"
+  appRepo = "https://github.com/OffbandMesh/meshcore-client"
+  firmwareRepo = "https://github.com/OffbandMesh/meshcore-firmware"
+  firmwareReleases = "https://github.com/OffbandMesh/meshcore-firmware/releases"
+  docsUrl = "https://docs.offband.org"
+  sponsorUrl = ""
+
+  [params.downloads]
+    android_apk = ""
+    google_play = ""
+    ios = ""
+    windows = ""
+    web = ""
+
+[[menu.main]]
+  name = "App"
+  pageRef = "/app"
+  weight = 10
+[[menu.main]]
+  name = "Firmware"
+  pageRef = "/firmware"
+  weight = 20
+[[menu.main]]
+  name = "About"
+  pageRef = "/about"
+  weight = 30
+[[menu.main]]
+  name = "Donate"
+  pageRef = "/donate"
+  weight = 40
+
+[markup.goldmark.renderer]
+  unsafe = true

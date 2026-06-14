@@ -1,0 +1,5 @@
+{{ with site.Params.sponsorUrl }}
+  <a class="btn" href="{{ . }}">&#9829; Sponsor on GitHub</a>
+{{ else }}
+  <a class="btn" aria-disabled="true" href="#">&#9829; Sponsoring coming soon</a>
+{{ end }}
