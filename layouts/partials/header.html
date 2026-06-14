@@ -1,5 +1,5 @@
 <header class="site-head"><div class="wrap">
-  <a class="brand" href="/" aria-label="Offband home"><img src="/img/logo-lockup-dark.svg" alt="Offband"></a>
+  <a class="brand" href="/" aria-label="Offband home"><img class="brand-mark" src="/img/logo-mark.svg" alt=""><span class="brand-word">offband</span></a>
   <nav class="nav">
     {{ range site.Menus.main }}<a href="{{ .PageRef | relURL }}"{{ if eq .Name "Donate" }} class="donate"{{ end }}>{{ .Name }}</a>{{ end }}
     <a href="{{ site.Params.docsUrl }}">Docs</a>

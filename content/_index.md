@@ -1,7 +1,7 @@
 ---
 title: Offband
 ---
-{{< hero title="Off-band mesh comms" lead="Open-source tools for LoRa mesh networking — a cross-platform MeshCore client and enhanced firmware. Built for the people who run the mesh." >}}
+{{< hero logo="/img/logo-lockup-dark.png" title="Off-band mesh comms" lead="Open-source tools for LoRa mesh networking — a cross-platform MeshCore client and enhanced firmware. Built for the people who run the mesh." >}}
 {{< cta href1="/app" label1="Get the app" href2="/firmware" label2="Get the firmware" >}}
 {{< /hero >}}
 
