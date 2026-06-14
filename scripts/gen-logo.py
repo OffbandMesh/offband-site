@@ -83,7 +83,7 @@ def write(name, content):
 
 
 print(f"writing to {OUT}")
-write("logo-mark.svg", svg("4 11 50 50", mark("translate(0 0)", GREEN_DIM, GREEN, "3")))
+write("logo-mark.svg", svg("4 11 50 50", mark("translate(0 0)", GREEN, GREEN, "4")))
 write("favicon.svg", svg("0 0 64 64", f'<rect width="64" height="64" rx="14" fill="{BG}"/>' + mark("translate(2.1 -5.1) scale(1.03)", GREEN_DIM, GREEN)))
 write("logo-lockup-dark.svg", svg("0 0 500 128", lockup(INK, GREEN_DIM, GREEN), style_defs()))
 write("logo-lockup-light.svg", svg("0 0 500 128", lockup(INK_DARK, GREEN_DARK, GREEN_DARK), style_defs()))
