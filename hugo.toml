@@ -11,7 +11,7 @@ disableKinds = ["taxonomy", "term"]
   appRepo = "https://github.com/OffbandMesh/meshcore-client"
   firmwareRepo = "https://github.com/OffbandMesh/meshcore-firmware"
   firmwareReleases = "https://github.com/OffbandMesh/meshcore-firmware/releases"
-  docsUrl = "https://docs.offband.org"
+  docsUrl = "/docs"
   sponsorUrl = ""
 
   [params.downloads]
