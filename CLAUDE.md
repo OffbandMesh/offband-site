@@ -4,7 +4,7 @@ Source for **offband.org** — the static marketing/landing site for **Offband**
 personal open-source project around LoRa mesh networking (currently MeshCore).
 
 > Offband has two products, each in its own repo under the OffbandMesh org:
-> the **app** (Offband Meshcore client) and the **firmware** (a MeshCore fork).
+> the **app** (Offband MeshCore client) and the **firmware** (a MeshCore fork).
 > This repo is just the website that introduces them.
 
 ## Stack
