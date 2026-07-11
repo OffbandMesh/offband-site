@@ -6,6 +6,7 @@ JetBrains Mono via <text> (outline it in a vector editor for non-browser use).
 Run: python scripts/gen-logo.py  ->  writes static/img/*.svg
 """
 import os
+import math
 
 OUT = os.path.normpath(os.path.join(os.path.dirname(__file__), "..", "static", "img"))
 os.makedirs(OUT, exist_ok=True)
@@ -88,4 +89,17 @@ write("favicon.svg", svg("0 0 64 64", f'<rect width="64" height="64" rx="14" fil
 write("logo-lockup-dark.svg", svg("0 0 500 128", lockup(INK, GREEN_DIM, GREEN), style_defs()))
 write("logo-lockup-light.svg", svg("0 0 500 128", lockup(INK_DARK, GREEN_DARK, GREEN_DARK), style_defs()))
 write("og-banner.svg", svg("0 0 1200 630", f'<rect width="1200" height="630" fill="{BG}"/><g transform="translate(190.3 207.2) scale(1.7)">' + lockup(INK, GREEN_DIM, GREEN) + "</g>", style_defs()))
+# profile: dark square + mark centered, escaping dot pulled to ~70% of the circular-crop radius
+_xmin, _xmax, _ymin, _ymax = 7.0, 49.1, 14.9, 59.0            # mark content bounds (raw coords)
+_bx, _by = (_xmin + _xmax) / 2, (_ymin + _ymax) / 2          # bbox center
+_far = math.hypot(46.1 - _bx, 17.9 - _by) + 3.0             # escaping-dot edge = farthest content point
+_C, _TARGET = 512, 0.70                                      # canvas; dot edge target as fraction of crop radius
+_s = (_TARGET * _C / 2) / _far
+_tx, _ty = _C / 2 - _bx * _s, _C / 2 - _by * _s
+write("logo-profile.svg", svg(
+    f"0 0 {_C} {_C}",
+    f'<rect width="{_C}" height="{_C}" fill="{BG}"/>'
+    f'<g transform="translate({_tx:.1f} {_ty:.1f}) scale({_s:.3f})">'
+    + mark("translate(0 0)", GREEN, GREEN, "4") + "</g>",
+))
 print("done")
