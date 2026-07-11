@@ -460,9 +460,9 @@ git commit -m "feat(#1): home page"
 ```markdown
 ---
 title: The app
-description: "Offband Meshcore — a cross-platform MeshCore client for Android, iOS, Windows, and web."
+description: "Offband MeshCore — a cross-platform MeshCore client for Android, iOS, Windows, and web."
 ---
-Offband Meshcore is a cross-platform client for MeshCore LoRa devices — connect over **BLE, USB serial, or TCP** and get full chat, mapping, and node administration.
+Offband MeshCore is a cross-platform client for MeshCore LoRa devices — connect over **BLE, USB serial, or TCP** and get full chat, mapping, and node administration.
 
 {{< downloads >}}
 

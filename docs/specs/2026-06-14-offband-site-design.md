@@ -7,7 +7,7 @@
 ## 1. Goal
 
 A lean, static marketing/landing site for the **Offband** project — the front door
-for both the **app** (Offband Meshcore client) and the **firmware** (a MeshCore
+for both the **app** (Offband MeshCore client) and the **firmware** (a MeshCore
 fork). Cheap to host, near-zero attack surface, expandable later without standing
 up a server.
 
