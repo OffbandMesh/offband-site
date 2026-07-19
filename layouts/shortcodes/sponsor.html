@@ -1,5 +1,5 @@
-{{ with site.Params.sponsorUrl }}
-  <a class="btn" href="{{ . }}">&#9829; Sponsor on GitHub</a>
-{{ else }}
-  <a class="btn" aria-disabled="true" href="#">&#9829; Sponsoring coming soon</a>
-{{ end }}
+<div class="cta">
+{{ with site.Params.kofiUrl }}<a class="btn" href="{{ . }}">&#9829; Support on Ko-fi</a>{{ end }}
+{{ with site.Params.sponsorUrl }}<a class="btn ghost" href="{{ . }}">Sponsor on GitHub</a>{{ end }}
+{{ if not (or site.Params.kofiUrl site.Params.sponsorUrl) }}<a class="btn" aria-disabled="true" href="#">&#9829; Support options coming soon</a>{{ end }}
+</div>

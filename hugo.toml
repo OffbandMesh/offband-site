@@ -13,6 +13,7 @@ disableKinds = ["taxonomy", "term"]
   firmwareReleases = "https://github.com/OffbandMesh/meshcore-firmware/releases"
   docsUrl = "/docs"
   sponsorUrl = ""
+  kofiUrl = "https://ko-fi.com/offband"
 
   [params.downloads]
     android_apk = ""
