@@ -5,5 +5,5 @@
 {{ with $d.ios }}<a class="btn ghost" href="{{ . }}">iOS</a>{{ end }}
 {{ with $d.windows }}<a class="btn ghost" href="{{ . }}">Windows</a>{{ end }}
 {{ with $d.web }}<a class="btn ghost" href="{{ . }}">Open web app</a>{{ end }}
-{{ if not (or $d.android_apk $d.google_play $d.ios $d.windows $d.web) }}<span class="muted mono">Downloads coming soon — see the <a href="{{ site.Params.appRepo }}">app repo</a>.</span>{{ end }}
+{{ if not (or $d.android_apk $d.google_play $d.ios $d.windows $d.web) }}<span class="muted mono">Downloads coming soon. See the <a href="{{ site.Params.appRepo }}">app repo</a>.</span>{{ end }}
 </div>

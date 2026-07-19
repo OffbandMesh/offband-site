@@ -4,7 +4,7 @@ enableRobotsTXT = false
 disableKinds = ["taxonomy", "term"]
 
 [params]
-  description = "Offband — open-source tools for LoRa mesh networking. A MeshCore client app and enhanced firmware."
+  description = "Offband: open-source tools for LoRa mesh networking. A MeshCore client app and enhanced firmware."
   tagline = "out-of-band mesh comms"
   ogImage = "/img/og-banner.png"
   githubOrg = "https://github.com/OffbandMesh"
