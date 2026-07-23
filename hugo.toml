@@ -12,7 +12,7 @@ disableKinds = ["taxonomy", "term"]
   firmwareRepo = "https://github.com/OffbandMesh/meshcore-firmware"
   firmwareReleases = "https://github.com/OffbandMesh/meshcore-firmware/releases"
   docsUrl = "/docs"
-  sponsorUrl = ""
+  sponsorUrl = "https://github.com/sponsors/Strycher"
   kofiUrl = "https://ko-fi.com/offband"
 
   [params.downloads]
